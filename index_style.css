@@ -25,7 +25,8 @@ body {
 
 .seccion{
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
+    background-color: var(--color-fondo1);
     padding-left: 30px;
     padding-right: 25px;
     padding-top: 5px;
@@ -38,8 +39,7 @@ body {
 
 #presentacion {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     padding-top: 20px;
     padding-bottom: 25px;
 }
@@ -48,6 +48,7 @@ body {
     font-family: var(--fuente-titulo);
     font-size: 60px;
     font-weight: 400;
+    color: var(--color-texto);
     line-height: 1;
     margin: 0;
 }
@@ -60,17 +61,22 @@ body {
     margin-left: 15px;
 }
 
+#i_pre{
+    width: 65%;
+    background-color: var(--color-fondo1);
+    left: 0px;
+    padding-right: 10px;
+}
 
-
-#presentacion p {
-    max-width: 700px;
-    font-size: 1.1rem;
+#d_pre{
+    width: 35%;
+    background-color: var(--color-fondo1);
+    right: 0px;
 }
 
 
 a {
     display: inline-block;
-    text-decoration: none;
 }
 
 #presentacion a {
@@ -81,6 +87,7 @@ a {
     border-radius: 35px;
     width: 170px;
     text-align: center;
+    text-decoration: none;
 }
 
 .boton_color{
@@ -96,25 +103,47 @@ a {
 }
 
 
-
-
 /* SECCIONES */
 
+/* PROYECTOS */
 
-
-/* PROYECTOS 
-
-#proyectos > div {
-    background-color: var(--color-fondo2);
-    margin-bottom: 25px;
-    border-radius: 12px;
+#caja {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
-#proyectos ul {
-    padding-left: 20px;
+.div_proyecto {
+    background-color: var(--color-fondo1);
+    padding-left: 15px;
+    border-radius: 15px;
+    height: 100%;
+}
+.div_proyecto ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 0;
 }
 
-*/
+.div_proyecto li {
+    background-color: var(--color2);
+    border: 1px solid var(--color2);
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-fondo1);
+    width: fit-content;
+    padding: 4px 9px 4px 9px;
+}
+
+.boton_pro{
+    margin-bottom: 10px;
+    color: var(--color2);
+}
+
+
 
 
 /* HABILIDADES 
