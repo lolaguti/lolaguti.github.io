@@ -3,49 +3,69 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Lola Gutiérrez</title>
+     <title>Lola Gutiérrez | Matemática</title>
+
+     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+     
+     <link rel="stylesheet" href="index_style.css">
 </head>
 
 <body>
      <!-- intro -->
-     <div>
-          <h1>María Dolores</h1><p>Lola</p>
-          <h1>Gutiérrez Rangel</h1>
-     </div>
+     
      
      <!-- presentacion -->
-     <div id="presentacion">
-          <h3>Hola, soy Lola</h3>
+     <div id="presentacion" class="seccion">
 
-          <h3>
+          <div id="i_pre" class="div_pre">
+               <h3>HOLA, SOY</h3>
+
+               <div id="nombre">
+                    <h1>
+                         María Dolores
+                         <span>Lola</span>
+                         <br>
+                         Gutiérrez Rangel
+                    </h1>
+               </div>
+
+          <p>
                Graduada en Matemáticas por la Universidad de Extremadura, con experiencia internacional en la Universidade de Coimbra.
+          </p>
 
-               Me interesa trabajar en proyectos que supongan un reto y que me permita seguir aprendiendo.
-          </h3>
+          <p>
+               Me interesa trabajar en proyectos que supongan un reto y que me permitan seguir aprendiendo.
+          </p>
 
           <div>
-               <a href="#proyectos">Ver proyectos</a>
-               <a href="#cv">Descargar CV</a>
+               <a href="#proyectos" class="boton_color">Ver proyectos</a>
+               <a href="cv.pdf" download class="boton_blanco">Descargar CV</a>
+          </div>
+
+          </div>
+
+          <div id="d_pre" class="div_pre">
+
           </div>
      </div>
      
      <!-- proyectos -->
-     <div id="proyectos">
-          <h3>Proyectos:</h3>
+     <div id="proyectos" class="seccion">
+          <h2>Proyectos:</h2>
 
           <!-- proyecto 2 -->
-          <div>
+          <div class="div_proyecto">
                <h3>
                     Trabajo Fin de Grado - Universidad de Extremadura - 2026
                </h3>
                <p>
-                    Desarrollo de un sistema para optimizar los horarios de clase universitarios minimizando las coincidencias de clases entre estudiantes. El proyecto combina modelización matematica, métodos heuristicos, creación y gestión
+                    Desarrollo de un sistema para optimizar los horarios universitarios minimizando las coincidencias de clases entre estudiantes. El proyecto combina modelización matemática, métodos heurísticos, creación y gestión
                     de bases de datos, y desarrollo web.
                </p>
 
                <ul>
                     <li>
-                         Matematicas aplicadas
+                         Matemáticas aplicadas
                     </li>
 
                     <li>
@@ -72,9 +92,9 @@
           </div>
 
           <!-- proyecto 1 -->
-          <div>
+          <div class="div_proyecto">
                <h3>
-                    Proyecto "Programaçao Avanzada" - Universidade de Coimbra - 2024
+                    Proyecto "Programação Avançada" - Universidade de Coimbra - 2024
                </h3>
                <p>
                     Desarrollo, junto con una compañera, de una aplicación web interactiva para explorar la historia de las matemáticas mediante una línea temporal conectada a una base de datos. La aplicación permite filtrar matemáticos por 
@@ -96,17 +116,17 @@
      </div>
      
      <!-- formacion -->
-     <div id="formacion">
-          <h3>Formación:</h3>
+     <div id="formacion" class="seccion">
+          <h2>Formación:</h2>
 
           <ul>
                <li>
-                    Grado en Matemáticas</br>
+                    Grado en Matemáticas<br>
                     Universidad de Extremadura
                </li>
 
                <li>
-                    Erasmus</br>
+                    Erasmus<br>
                     Universidade de Coimbra
                </li>
 
@@ -119,8 +139,8 @@
      </div>
 
      <!-- habilidades -->
-     <div id="habilidades">
-          <h3>Habilidades</h3>
+     <div id="habilidades" class="seccion">
+          <h2>Habilidades</h2>
 
           <ul>
                <li>
@@ -128,7 +148,7 @@
                </li>
 
                <li>
-                    Datos y estadística: SQL, R, RStudio, Jamovi, MatLab
+                    Datos y estadística: SQL, R, RStudio, Jamovi, MATLAB
                </li>
 
                <li>
@@ -143,8 +163,8 @@
      </div>
      
      <!-- contacto -->
-     <div id="contacto">
-          <h3>Contacto</h3>
+     <div id="contacto" class="seccion">
+          <h2>Contacto</h2>
 
           <div>
                <a href="">LinkedIn</a>
