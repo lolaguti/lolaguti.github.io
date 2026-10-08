@@ -1,0 +1,133 @@
+:root {
+    --color2: #8b7aeb;
+    --color-texto: #202a44;
+    --color-fondo1: #f8f6f1;
+    --color-fondo2: #ffffff;
+    --color-extra1: #f28c8c;
+    --color-extra2: #a8c3b0;
+
+    --fuente-titulo: "DM Serif Display", serif;
+    --fuente-texto: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-texto);
+    background-color: var(--color-fondo1);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+
+.seccion{
+    width: 100%;
+    background-color: red;
+    padding-left: 30px;
+    padding-right: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+
+/* PRESENTACIÓN */
+
+#presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+#nombre h1 {
+    font-family: var(--fuente-titulo);
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+
+#nombre h1 span {
+    font-family: var(--fuente-titulo);
+    font-size: 45px;
+    color: var(--color2);
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+
+
+#presentacion p {
+    max-width: 700px;
+    font-size: 1.1rem;
+}
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#presentacion a {
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 10px 18px;
+    border: 1px solid var(--color2);
+    border-radius: 35px;
+    width: 170px;
+    text-align: center;
+}
+
+.boton_color{
+    background-color: var(--color2);
+    color: var(--color-fondo2);
+    font-weight: bold;
+}
+
+.boton_blanco{
+    background-color: var(--color-fondo2);
+    color: var(--color2);
+    font-weight: bold;
+}
+
+
+
+
+/* SECCIONES */
+
+
+
+/* PROYECTOS 
+
+#proyectos > div {
+    background-color: var(--color-fondo2);
+    margin-bottom: 25px;
+    border-radius: 12px;
+}
+
+#proyectos ul {
+    padding-left: 20px;
+}
+
+*/
+
+
+/* HABILIDADES 
+
+#habilidades ul {
+    padding-left: 20px;
+}
+*/
+
+/* CONTACTO 
+
+#contacto a {
+    margin-right: 20px;
+}
+
+*/
