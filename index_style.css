@@ -368,3 +368,167 @@ a {
     height: 14px;
     object-fit: contain;
 }
+
+
+
+/* ==========================
+   DISEÑO PARA MÓVILES
+   ========================== */
+
+@media (max-width: 700px) {
+
+    /* Ajustes generales */
+    .seccion {
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 12px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+
+    /* PRESENTACIÓN */
+    #presentacion {
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 20px 18px 30px;
+        gap: 20px;
+    }
+
+    #i_pre,
+    #d_pre {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #d_pre {
+        overflow: visible;
+    }
+
+    #foto_cv {
+        width: 180px;
+        height: 180px;
+        max-width: 100%;
+        object-fit: cover;
+        left: 0;
+    }
+
+    #nombre h1 {
+        font-size: clamp(36px, 9vw, 48px);
+        line-height: 1.1;
+        overflow-wrap: anywhere;
+        margin-bottom: 20px;
+    }
+
+    #nombre h1 span {
+        font-size: 30px;
+        margin-left: 5px;
+    }
+
+    #presentacion a {
+        margin-top: 10px;
+        margin-right: 5px;
+        padding: 10px 12px;
+        width: auto;
+        min-width: 0;
+        font-size: 13px;
+    }
+
+
+    /* PROYECTOS */
+    #caja {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .div_proyecto {
+        min-width: 0;
+        padding: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .div_proyecto li {
+        font-size: 12px;
+    }
+
+
+    /* FORMACIÓN */
+    .div_f {
+        padding: 12px 15px;
+    }
+
+
+    /* HABILIDADES */
+    .div_h {
+        height: auto;
+        min-height: 80px;
+        padding: 12px;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #div_icono1 {
+        flex: 0 0 42px;
+        width: 42px;
+        height: 42px;
+        margin: 0;
+    }
+
+    .div_h img {
+        max-width: 100%;
+        max-height: 60%;
+        height: auto;
+    }
+
+    .lista_h {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .div_h h3 {
+        font-size: 16px;
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .div_h ul {
+        gap: 6px;
+        margin: 8px 0 0;
+    }
+
+    .div_h li {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+
+
+    /* CONTACTO */
+    #botones_contacto {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #contacto a {
+        width: 115px;
+        height: 42px;
+        gap: 7px;
+        padding: 6px 8px;
+        font-size: 14px;
+    }
+}
