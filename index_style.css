@@ -40,7 +40,7 @@ h2{
 
 h3{
     color: var(--color-texto);
-    font-size: 20px;
+    font-size: 25px;
     font-style: var(--fuente-texto);
     margin-right: 10px;
     margin-bottom: 0px;
@@ -48,7 +48,7 @@ h3{
 
 h4{
     color: var(--color-texto);
-    font-size: 15px;
+    font-size: 20px;
     font-style: var(--fuente-texto);
     margin-right: 10px;
     margin-top: 0px;
@@ -56,7 +56,7 @@ h4{
 
 p{
     color: var(--color-texto);
-    font-size: 13px;
+    font-size: 18px;
     font-style: var(--fuente-texto);
     margin-right: 10px;
 }
@@ -530,4 +530,3 @@ a {
         font-size: 14px;
     }
 }
-
