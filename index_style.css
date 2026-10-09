@@ -19,7 +19,7 @@
 body {
     margin: 0;
     font-family: var(--fuente-texto);
-    background-color: var(--color-fondo1);
+    background-color: var(--color-fondo2);
     color: var(--color-texto);
     line-height: 1.6;
 }
@@ -27,8 +27,6 @@ body {
 
 .seccion{
     width: 100%;
-    background-color: var(--color-fondo1);
-    /* background-color: red; */
     padding-left: 30px;
     padding-right: 25px;
     padding-bottom: 10px;
@@ -69,8 +67,10 @@ p{
 #presentacion {
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    margin-top: 20px;
     padding-bottom: 25px;
+    background-color: var(--color-fondo1);
+    height: fit-content;
 }
 
 #nombre h1 {
@@ -80,6 +80,7 @@ p{
     color: var(--color-texto);
     line-height: 1;
     margin: 0;
+    margin-bottom: 25px;
 }
 
 #nombre h1 span {
@@ -90,17 +91,22 @@ p{
     margin-left: 15px;
 }
 
-#i_pre{
+#i_pre {
     width: 65%;
     background-color: var(--color-fondo1);
-    left: 0px;
     padding-right: 10px;
 }
 
-#d_pre{
+#d_pre {
     width: 35%;
     background-color: var(--color-fondo1);
-    right: 0px;
+
+    display: flex;
+    align-items: center;      /* Centrado vertical */
+    justify-content: center;  /* Centrado horizontal */
+
+    position: relative;
+    overflow: hidden;
 }
 
 
@@ -110,7 +116,7 @@ a {
 
 #presentacion a {
     margin-right: 15px;
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 10px 18px;
     border: 1px solid var(--color2);
     border-radius: 35px;
@@ -129,6 +135,17 @@ a {
     background-color: var(--color-fondo2);
     color: var(--color2);
     font-weight: bold;
+}
+
+#foto_cv {
+    width: auto;
+    height: 80%;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+
+    position: relative;
+    left: 0;
 }
 
 
@@ -179,7 +196,6 @@ a {
 }
 
 .div_f{
-    background-color: aqua;
     padding-left: 15px;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -338,7 +354,7 @@ a {
     width: 120px;
     height: 45px;
     padding: 8px 11px;
-    background-color: var(--color-fondo1);
+    background-color: var(--color-fondo2);
     color: var(--color-texto);
     border: 2px solid var(--color2);
     border-radius: 5px;
