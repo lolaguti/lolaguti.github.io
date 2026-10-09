@@ -102,11 +102,12 @@ p{
     background-color: var(--color-fondo1);
 
     display: flex;
-    align-items: center;      /* Centrado vertical */
-    justify-content: center;  /* Centrado horizontal */
+    align-items: center;
+    justify-content: center;  
 
     position: relative;
     overflow: hidden;
+    min-width: 0;
 }
 
 
@@ -138,14 +139,12 @@ a {
 }
 
 #foto_cv {
-    width: auto;
-    height: 80%;
+    width: 100%;
     max-width: 100%;
-    object-fit: contain;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
     border-radius: 50%;
-
-    position: relative;
-    left: 0;
 }
 
 
@@ -377,7 +376,6 @@ a {
 
 @media (max-width: 700px) {
 
-    /* Ajustes generales */
     .seccion {
         padding-left: 18px;
         padding-right: 18px;
@@ -532,3 +530,4 @@ a {
         font-size: 14px;
     }
 }
+
