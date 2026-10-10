@@ -8,6 +8,7 @@
      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
      
      <link rel="stylesheet" href="index_style.css">
+
 </head>
 
 <body>
@@ -86,7 +87,7 @@
                     de bases de datos, y desarrollo web.
                </p>
 
-               <ul>
+               <ul class="lista_circulos">
                     <li>Matemáticas aplicadas</li>
                     <li>Optimización</li>
                     <li>Algoritmos heurísticos</li>
@@ -96,8 +97,8 @@
                     <li>Bases de Datos</li>
                </ul>
 
-               <a href="#proyectos" class="boton_pro">Ver proyecto</a>
-
+              <button type="button" class="boton_pro" onclick="abrirProyecto(2)">Ver proyecto →</button> 
+          
           </div>
 
           <!-- proyecto 1 -->
@@ -113,16 +114,192 @@
                     diferentes características, consultar información detallada y gestionar los datos mediante un panel de edición.
                </p>
 
-               <ul>
+               <ul class="lista_circulos">
                     <li>Base de Datos</li>
                     <li>Interfaz interactiva</li>
                </ul>
 
-               <a href="#proyectos" class="boton_pro">Ver proyecto</a>
+               <button type="button" class="boton_pro" onclick="abrirProyecto(1)">Ver proyecto →</button> 
           </div>
 
           </div>       
      </div>
+
+     <!-- popup 2-->
+
+     <div id="popup_proyecto2" class="popup" aria-hidden="true">
+          <div class="popup_contenido"
+               role="dialog"
+               aria-modal="true"
+               aria-labelledby="popup_titulo">
+
+               <p class="popup_etiqueta">TRABAJO FIN DE GRADO · 2026</p>
+
+               <h2 id="popup_titulo">
+                    Optimización de horarios
+               </h2>
+
+               <p>
+                    ¿Cómo se pueden organizar los horarios universitarios para reducir las coincidencias entre las
+                    asignaturas en las que está matriculado cada estudiante?
+               </p>
+               <p>     
+                    Este proyecto aborda el problema mediante modelización matemática y algoritmos heurísticos,
+                    con el objetivo de mejorar la planificación de horarios de los grados en Matemáticas, Física
+                    y Estadística, y del doble grado en Matemáticas y Estadística de la Universidad de Extremadura.
+               </p>
+
+               <h3>Proceso:</h3>
+               <ul>
+                    <li>
+                         <p>Modelización y optimización:</p>
+                         Formulación del problema mediante programación entera y definición de las restricciones de planificación.
+                    </li>
+
+                    <li>
+                         <p>Experimentación con heurísticas:</p>
+                         Implementación y comparación de algoritmos genéticos, enfriamiento simulado y búsqueda
+                         tabú en R. El análisis experimental identificó el enfriamiento simulado como el método
+                         más adecuado de los estudiados para este problema.
+                    </li>
+
+                    <li>
+                         <p>Base de datos y aplicación web:</p>
+                         Diseño de una base de datos para gestionar estudiantes, profesorado y asignaturas, e
+                         integración de los resultados en una aplicación web que permite consultar horarios
+                         individualizados.
+                    </li>
+               </ul>
+
+               <div class="div_img">
+                    <img src ="img/TFG1.jpg" >
+                    <img src ="img/TFG2.jpg" >
+                    <img src ="img/TFG3.jpg" >
+               </div>
+
+               <h3>Resultados</h3>
+               <p>
+                    En el ejemplo estudiado en la memoria, las coincidencias del horario de un estudiante de
+                    Matemáticas se redujeron de 5 a 2 tras la optimización.
+               </p>
+
+               <h3>Tecnologías utilizadas</h3>
+               <ul class="lista_circulos">
+                    <li>R / RStudio</li>
+                    <li>MySQL</li>
+                    <li>PHP</li>
+                    <li>HTML </li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+               </ul>
+
+
+               <div class="popup_acciones">
+                    <button type="button"
+                              class="boton-popup boton-cerrar"
+                              onclick="cerrarProyecto(2)">
+                         Cerrar
+                    </button>
+
+                    <a class="boton-popup boton-codigo"
+                         href="https://github.com/lolaguti/optimizacion-horarios-tfg"
+                         target="_blank"
+                         rel="noopener noreferrer">
+                         Ver código en GitHub ↗
+                    </a>
+               </div>
+
+          </div>
+     </div>
+
+     <!-- popup 1-->
+<div id="popup_proyecto1" class="popup" aria-hidden="true">
+    <div class="popup_contenido"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="popup_titulo1">
+
+        <p class="popup_etiqueta">
+            PROYECTO "PROGRAMAÇÃO AVANÇADA" · 2024
+        </p>
+
+        <h2 id="popup_titulo1">
+            Linha temporal de matemáticos famosos
+        </h2>
+
+        <p>
+            Desarrollada junto con una compañera en la asignatura
+            Programação Avançada de la Universidade de Coimbra,
+            esta aplicación web permite explorar un archivo de
+            matemáticos famosos, consultar sus biografías y descubrir
+            sus nacionalidades, áreas de estudio, instituciones y
+            contribuciones a las matemáticas.
+        </p>
+
+        <h3>Funcionalidades:</h3>
+
+        <ul>
+            <li>
+                <p>Visualización interactiva:</p>
+                Una línea temporal que organiza a los matemáticos
+                cronológicamente y permite consultar información
+                detallada de cada uno.
+            </li>
+
+            <li>
+                <p>Búsqueda y filtros:</p>
+                Búsqueda por nombre, fechas, nacionalidad, áreas de
+                estudio, instituciones y localización geográfica.
+            </li>
+
+            <li>
+                <p>Gestión de datos:</p>
+                Un panel privado para que los editores puedan añadir,
+                modificar y eliminar matemáticos y gestionar sus
+                relaciones con instituciones y contribuciones.
+            </li>
+
+            <li>
+                <p>Exportación a PDF:</p>
+                Generación de una versión imprimible de la línea
+                temporal y de los resultados de búsqueda mediante
+                LaTeX.
+            </li>
+        </ul>
+
+        <div class="div_img">
+            <img src="img/PA1.jpg" alt="Página principal con la línea temporal">
+            <img src="img/PA2.jpg" alt="Panel de edición de la aplicación">
+        </div>
+
+        <h3>Tecnologías utilizadas</h3>
+
+        <ul class="lista_circulos">
+            <li>MySQL</li>
+            <li>PHP</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>LaTeX</li>
+        </ul>
+
+        <div class="popup_acciones">
+            <button type="button"
+                    class="boton-popup boton-cerrar"
+                    onclick="cerrarProyecto(1)">
+                Cerrar
+            </button>
+
+            <a class="boton-popup boton-codigo"
+               href="https://github.com/lolaguti/linha-temporal-pa"
+               target="_blank"
+               rel="noopener noreferrer">
+                Ver código en GitHub ↗
+            </a>
+        </div>
+
+    </div>
+</div>
      
      <!-- formacion -->
      <div id="formacion" class="seccion">
@@ -285,6 +462,9 @@
 
 
      </div>
+
+     <script src="index_script.js"></script>
+     
 
 </body>  
   
