@@ -58,7 +58,6 @@ p{
     color: var(--color-texto);
     font-size: 18px;
     font-style: var(--fuente-texto);
-    margin-right: 10px;
 }
 
 
@@ -217,6 +216,19 @@ a {
     color: var(--color2);
 }
 
+.div_proyecto {
+    position: relative;
+    min-width: 0;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.img_p {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-left: 8px;
+}
 
 /* POP UP */
 .popup {
@@ -637,13 +649,42 @@ a {
     }
 
     .div_proyecto {
+        position: relative;
         min-width: 0;
         padding: 16px;
+        overflow: hidden;
         overflow-wrap: anywhere;
     }
 
+    .div_proyecto {
+        position: relative;
+    }
+
+    .img_p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        opacity: 0.04;
+    }
+
+
     .div_proyecto li {
         font-size: 12px;
+    }
+
+    .div_proyecto h3,
+    .div_proyecto h4,
+    .div_proyecto p,
+    .div_proyecto ul,
+    .div_proyecto button {
+        position: relative;
+        z-index: 1;
     }
 
     /* POP UP */
@@ -662,6 +703,8 @@ a {
     .boton-popup {
         width: 100%;
     }
+
+    
 
     /* FORMACIÓN */
     .div_f {
